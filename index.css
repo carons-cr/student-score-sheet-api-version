@@ -1,0 +1,43 @@
+.form-btn{
+    text-align: right;
+    margin-top:5px;
+    margin-left: 0;
+}
+.form-text-name{
+    border: #b9def0 2px solid;
+    width: 95px;
+    height: 30px;
+}
+.form-text-sno{
+    border: #b9def0 2px solid;
+    width: 120px;
+    height: 30px;
+}
+.form-text-nation{
+    border: #b9def0 2px solid;
+    width: 95px;
+    height: 30px;
+}
+.form-text-class{
+    border: #b9def0 2px solid;
+    width: 95px;
+    height: 30px;
+}
+.form-text-subject{
+    border: #b9def0 2px solid;
+    width: 95px;
+    height: 30px;
+}
+.form-text-grade{
+    border: #b9def0 2px solid;
+    width: 95px;
+    height: 30px;
+}
+.form-btn{
+    border: #b9def0 2px solid;
+}
+.form-text-checksno{
+    border: #b9def0 2px solid;
+    width: 640px;
+    height: 30px;
+}

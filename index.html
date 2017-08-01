@@ -2,12 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>学生成绩管理系统</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<form action="/add-anything" method="post">
- <input type="text" name="name"/>
-    <button type="submit"></button>
+<form >
+    <div class="form-group">
+        <input type="text" class="form-text-name" placeholder="姓名" id="add-name"maxlength="4" minlength="1"/>
+        <input type="text" class="form-text-sno" placeholder="学号" id="add-sno" />
+        <input type="text" class="form-text-nation" placeholder="民族" id="add-nation"maxlength="4" minlength="1"/>
+        <input type="number" class="form-text-class" placeholder="班级" id="add-klass" />
+        <input type="number" class="form-text-grade" placeholder="语文成绩" id="add-chinese" />
+        <input type="number" class="form-text-grade" placeholder="数学成绩" id="add-math"/>
+        <input type="number" class="form-text-grade" placeholder="英语成绩" id="add-english"/>
+        <input type="number" class="form-text-grade" placeholder="编程成绩" id="add-programe"/>
+        <button type="submit" class="btn btn-default form-btn" onclick="addStu(event)">add</button>
+        <button type="submit" class="btn btn-default form-btn" onclick="updateStu(event)">update</button><br/>
+        <input type="text" class="form-text-checksno" placeholder="学号1，学号2，，，" id="check-sno" />
+        <button type="submit" class="btn btn-default form-btn" onclick="checkStu(event)">check</button>
+        <button type="submit" class="btn btn-default form-btn" onclick="deleteStu(event)">delete</button>
+        <button type="submit" class="btn btn-default form-btn" onclick="displayStu(event)">display</button>
+        <button type="submit" class="btn btn-default form-btn" onclick="freshen()">freshen</button>
+    </div>
 </form>
+<table class="table table-grade" id="table-grade">
+    <!--<thead>
+        <tr>
+            <th class="info">姓名</th>
+            <th class="info">语文</th>
+            <th class="info">数学</th>
+            <th class="info">英语</th>
+            <th class="info">编程</th>
+        </tr>
+    </thead>
+    <tbody id="table-grade">
+
+    </tbody>
+    <tr>
+        <th class="info">姓名</th>
+        <th class="info">语文</th>
+        <th class="info">数学</th>
+        <th class="info">英语</th>
+        <th class="info">编程</th>
+    </tr>
+    <tr>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+    </tr>
+    <tr>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+    </tr>
+    <tr>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+        <td ><input /></td>
+    </tr>-->
+</table>
 </body>
 </html>
